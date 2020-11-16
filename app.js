@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public/')));
 
 
-mongoose.connect('mongodb+srv://sanjayAshwat:tecwebsite@cluster1.rbufv.mongodb.net/Blogs?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv:/<user>:<password>@cluster1.rbufv.mongodb.net/Blogs?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
